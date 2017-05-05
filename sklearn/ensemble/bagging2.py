@@ -27,16 +27,6 @@ from ..utils.multiclass import check_classification_targets
 
 from .base import BaseEnsemble, _partition_estimators
 
-from builtins import zip
-from builtins import str
-from builtins import range
-import subprocess
-import json
-from nbconvert.preprocessors.execute import CellExecutionError,\
-    ExecutePreprocessor
-import nbformat
-import sys, os, re, logging
-
 
 __all__ = ["BaggingClassifier",
            "BaggingRegressor"]
